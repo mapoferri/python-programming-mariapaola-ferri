@@ -1,15 +1,21 @@
 #function dividing the neurons by their lenght:
-
 fil= open('neurons.txt', 'r')
 L1=[]
 L2=[]
 for line in fil:
 	splitted=line.split()
 	if splitted[0]=='1':
-		L1.append(splitted)
+		L1.append(float(splitted[1]))
+		for element in L1:		
+			average1 = sum(L1)/len(L1)
+		
 	else:		
 		splitted[0]=='2'
-		L2.append(splitted)
-
-print (L1)
+		L2.append(float(splitted[1]))
+		for element in L2:	
+			average2 = sum(L2)/len(L2)
+print (L1)			
+print ('the average of the first lenghts of neurons is', (average1))
 print (L2)
+print ('the average of the second lenght of neurons is',(average2))
+

@@ -1,0 +1,15 @@
+#function dividing the neurons by their lenght:
+
+fil= open('neurons.txt', 'r')
+L1=[]
+L2=[]
+for line in fil:
+	splitted=line.split()
+	if splitted[0]=='1':
+		L1.append(splitted)
+	else:		
+		splitted[0]=='2'
+		L2.append(splitted)
+
+print (L1)
+print (L2)

@@ -10,8 +10,9 @@ genfile =  file.readline().split()
 digit = [0,1,2,3,4,5,6,7,8,9]
 for line in file.readline():
     if len(line) >0 and line[0].isdigit(): 
-        print line[1:]
-        print accession
+        sequence = line[1:]
+        accession += sequence
+print accession
 
         
 
